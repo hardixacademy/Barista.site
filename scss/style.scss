@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,700|Russo+One&display=swap');
+
+@import "_reset.scss";
+@import "_layput.scss";
+@import "_style.scss";
+
+
+
+  // load more button
+  #btn-instafeed-load {
+    color: $brand_color;
+    background: $span_text;
+    margin: 20px auto;
+    padding: 8px 12px;
+    display: block;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: 0.3s linear;
+  }
+  #btn-instafeed-load:hover{
+    color: $text_color;
+    background: $brand_color;
+  }
+  // media queries 

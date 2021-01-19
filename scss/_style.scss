@@ -1,0 +1,406 @@
+
+.form_order{
+    padding-top: 90px;
+    padding-bottom: 60px;
+    position: relative;
+    margin-top: 60px;
+}
+.form_order::after {
+    content: "";
+    background: url(../img/bg_coffee.jpg);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    filter: blur(1px);
+  }
+.box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: 400px;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 50px;
+  
+  }
+  
+  .box h1 {
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0px 0px 20px 0px;
+    color: #5C5C5C;
+    font-size: x-large;
+  }
+  
+  .box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .box li {
+    width: 350px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    padding: 0 20px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    border-bottom: 2px solid $span_text;
+    margin-bottom: 30px;
+    border-radius: 10px;
+  }
+  
+  .box li:last-child {
+    border: none;
+    padding: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  
+  .box li>label {
+    display: block;
+    float: left;
+    margin-top: -19px;
+    height: 22px;
+    padding: 2px 5px 2px 5px;
+    color: #fff;
+    font-size: 14px;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .box input[type="text"] {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    display: block;
+    outline: none;
+    border: none;
+    height: 35px;
+    color: #fff;
+    line-height: 35px;
+    font-size: 16px;
+    padding: 0;
+    background-color: transparent;
+    caret-color: rgb(255, 255, 255);
+  }
+  
+  .box input[type="text"]:focus {
+    color: #fff;
+  }
+  
+  .box li>span {
+    display: block;
+    padding: 3px;
+    margin: 0 -9px -9px -9px;
+    text-align: center;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+  }
+  
+  .box textarea {
+    resize: none;
+  }
+  
+  .box button[type="submit"],
+  .box input[type="button"] {
+      outline: none;
+      border: none;
+    display: flex;
+    justify-content: center;
+    font-family: montserrat;
+    font-weight: 500;
+    align-items: center;
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+    background: $span_text;
+    color: $brand_color;
+    border-radius: 10px;
+    width: 170px;
+    height: 40px;
+    transition: all .3s linear;
+  }
+  
+  .box button[type="submit"]:hover,
+  .box input[type="button"]:hover {
+    color: $text_color;
+    background: $brand_color;
+  }
+  
+  /* form end  */
+
+.head_wrap {
+    width: 100%;
+    height: 100vh;
+    padding-top: 20px;
+    background-color: $brand_color;
+}
+
+.vid_wrap {
+    overflow: hidden;
+}
+
+video {
+    filter: blur(8px);
+}
+
+.head_wrap_padge {
+    position: relative;
+
+    h1 {
+        text-align: center;
+        margin-top: 90px;
+    }
+
+    h2,
+    h3 {
+        text-align: center;
+        margin-top: 50px;
+    }
+}
+
+.head_wrap_padge_but {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    a {
+        margin: 0 15px;
+    }
+}
+
+.coffee {
+    padding: 60px 0;
+
+    span {
+        color: $span_text
+    }
+}
+
+.cours_info {
+    padding: 60px 0;
+}
+
+.coffee_spec {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-content: center;
+    margin-top: 60px;
+    padding: 0 30px;
+
+    img {
+        width: 530px;
+        height: 100%;
+        margin: 0 30px;
+    }
+}
+
+.coffee_spec_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+
+.coffee_spec_text_item {
+    font-size: 24px;
+    line-height: 35px;
+    color: $text_color;
+    font-family: 'Russo One', sans-serif;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.course_practice_bonus,
+.course_practice_end {
+    h1 {
+        text-align: center;
+        color: $span_text;
+    }
+
+    ;
+
+    .main_p {
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+
+.cours_info_theory,
+.cours_info_practice {
+    padding: 30px 0;
+}
+
+.cours_info_theory_item_text {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        padding: 10px;
+        color: $span_text;
+    }
+
+    ;
+
+    img {
+        width: 300px;
+        margin: 0 40px;
+        border-radius: 50%;
+        border: 4px $span_text solid;
+    }
+}
+
+.cours_info_theory_item_text_sp {
+    margin: 0 40px;
+}
+
+.cours_info_practice {
+    .cours_info_theory_item_text {
+        margin: 60px 0;
+    }
+}
+
+.left_item {}
+
+.flex_practice_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gallery {
+    margin-top: 60px;
+}
+
+@media (max-width:1049px) {
+    .cours_info_theory_item_text_sp {
+        margin: 0 0px;
+        margin-bottom: 30px;
+    }
+
+    .cours_info_practice {
+        .cours_info_theory_item_text {
+            margin: 30px 0;
+        }
+    }
+}
+
+@media (max-width:968px) {
+    .cours_info_theory_item_text {
+        margin: 30px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &.gg {
+        flex-direction: column-reverse;
+    }
+
+    .coffee_spec {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        img {
+            display: none;
+        }
+
+    }
+    .coffee_spec::after {
+        content: "";
+        background: url(../img/coffee_drinks.jpg);
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;   
+        
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+    .coffee_spec_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .coffee_spec_text_item {
+        font-size: 22px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width:768px) {
+    .head_wrap {
+        height: auto;
+    }
+
+    .head_wrap_padge {
+        h3 {
+            text-align: center;
+            margin-top: 30px;
+        }
+    }
+
+    .cours_info_theory_item_text {
+        h1 {
+            padding: 10px;
+            color: $span_text;
+        }
+
+        ;
+
+        img {
+            margin: 0 0px;
+            margin-bottom: 30px;
+        }
+    }
+
+}
+@media (max-width: 374px){
+.box li {
+  width: 300px;
+}
+}
